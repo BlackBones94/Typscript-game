@@ -1,0 +1,124 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+canvas {
+  border: 2px solid #333;
+  background-color: #8b8b8b;
+}
+
+.toggle-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  background-color: #45a049;
+}
+
+.inventory, .player-stats, .enemy-stats {
+  margin: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.player-stats {
+  position: absolute;
+  left: -350px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.enemy-stats {
+  position: absolute;
+  right: -220px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.combat-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcccb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.combat-actions button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.combat-actions button:hover {
+  background-color: #e64a19;
+}
+
+.dungeon-completed-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4edda;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dungeon-completed-screen h1 {
+  color: #155724;
+}
+
+.dungeon-completed-screen p {
+  color: #155724;
+}
+
+.dungeon-completed-screen button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dungeon-completed-screen button:hover {
+  background-color: #218838;
+}
